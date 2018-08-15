@@ -9,7 +9,7 @@
     "lint": "eslint --ext .js --ext .jsx ./src ./tests",
     "lint-export": "npm run lint -- -o ./tests_results/checkstyle/js-checkstyle.xml -f checkstyle",
     "flow": "flow",
-    "flow-init": "flow-typed install jest@22.x enzyme@3.x enzyme-adapter-react-16@x.x",
+    "flow-init": "flow-typed install jest@22.x enzyme@3.x enzyme-adapter-react-16@x.x query-string@6.x",
     "flow-coverage": "flow-coverage-report -f \"node node_modules/flow-bin/vendor/flow\" -i ./src/**/*.js* -t html -t text -t json -o tests_results/coverage/flow",
     "develop": "webpack-dev-server --mode development --content-base build/",
     "build": "rm -rf ./dist && rollup --config ./rollup.config.js",
