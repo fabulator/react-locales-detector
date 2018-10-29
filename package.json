@@ -1,6 +1,6 @@
 {
   "name": "react-locales-detector",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "React locales detector",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.es.js",
@@ -25,7 +25,7 @@
   "license": "Apache License 2.0",
   "homepage": "https://github.com/fabulator/react-locales-detector#readme",
   "dependencies": {
-    "locales-detector": "^1.1.0",
+    "locales-detector": "^1.1.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },

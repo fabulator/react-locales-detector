@@ -1,6 +1,17 @@
 // @flow
 import * as React from 'react';
-import { LocaleResolver, NavigatorDetector } from 'locales-detector';
+import {
+    LocaleResolver,
+    NavigatorDetector,
+    UrlDetector,
+    FromListDetector,
+    LanguageOnlyTransformer,
+    AllowOnlyTransformer,
+    DefaultLocaleTransformer,
+    FallbacksTransformer,
+    IETFTransformer,
+    InvalidLocalesTransformer,
+} from 'locales-detector';
 import type Transformer from 'locales-detector/src/transformers/Transformer';
 import type Detector from 'locales-detector/src/detectors/Detector';
 
@@ -18,6 +29,21 @@ export class LocalesProvider extends React.Component<Props> {
     static defaultProps = {
         detectors: [new NavigatorDetector()],
         transformers: [],
+    };
+
+    static DETECTORS = {
+        NavigatorDetector,
+        UrlDetector,
+        FromListDetector,
+    };
+
+    static TRANSFORMERS = {
+        LanguageOnlyTransformer,
+        AllowOnlyTransformer,
+        DefaultLocaleTransformer,
+        FallbacksTransformer,
+        IETFTransformer,
+        InvalidLocalesTransformer,
     };
 
     render() {
