@@ -1,6 +1,6 @@
 {
   "name": "react-locales-detector",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "React locales detector",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
