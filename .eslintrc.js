@@ -3,13 +3,7 @@ module.exports = {
         '@socifi',
         '@socifi/eslint-config/react',
     ],
-    rules: {
-        'react/require-default-props': 0,
-    },
-    settings: {
-        polyfills: [
-            'fetch',
-            'promises',
-        ],
-    },
+    plugins: [
+        'typescript', // fix for Webstorm, otherwise it does not parse ts files
+    ],
 };

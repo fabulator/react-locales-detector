@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "*",
+        "src/*"
+      ]
+    },
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "module": "commonjs",
+    "target": "esnext",
+    "strict": true
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
